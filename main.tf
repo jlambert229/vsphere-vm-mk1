@@ -14,7 +14,7 @@ terraform {
 provider "vsphere" {
   user           = "administrator@vsphere.local"
   password       = "VMware1!"
-  vsphere_server = "vc-01.foggyclouds.io
+  vsphere_server = "vc-01.foggyclouds.io"
 
   # If you have a self-signed cert
   allow_unverified_ssl = true
@@ -86,7 +86,7 @@ resource "vsphere_virtual_machine" "vm" {
 
       linux_options {
         host_name = "test-vm-01"
-        domain    = "foggyclouds.io
+        domain    = "foggyclouds.io"
       }
     }
   }
